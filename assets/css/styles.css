@@ -1,0 +1,512 @@
+/* ============= Common ============= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  height: 2000px; /* Tam */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============= Common ============= */
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 107px;
+  padding: 12px 16px;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  border: none;
+}
+
+.btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+/* ============= Header-Navbar ============= */
+
+#header-navbar {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+
+  background-color: #000;
+}
+
+#header-navbar .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-navbar a {
+  display: inline-block;
+  min-height: 46px;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#header-navbar .nav li:hover > a {
+  color: #000;
+  background-color: #ccc;
+}
+
+#header-navbar .nav > li:hover > .sub-nav {
+  display: block;
+}
+
+#header-navbar .nav {
+  display: flex;
+}
+
+#header-navbar .search a:hover {
+  background-color: #f44336;
+  color: #fff;
+}
+
+#header-navbar .sub-nav {
+  display: none;
+  position: absolute;
+  top: 46px;
+}
+
+#header-navbar .sub-nav a {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  color: #000;
+  background-color: #fff;
+}
+
+/* ============= Slider ============= */
+#slider {
+  position: relative;
+  padding-top: 50%;
+  background: url(/assets/img/ny.jpg) top center / cover no-repeat;
+}
+
+#slider .text-slider {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%);
+
+  padding: 16px 32px;
+  text-align: center;
+  color: #fff;
+}
+
+#slider .sub-title {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+
+  margin: 10px 0;
+}
+
+#slider .desc {
+  font-size: 1.5rem;
+  font-style: bold;
+  font-weight: bolder;
+  margin: 15px 0;
+}
+
+/* ============= Content ============= */
+/* ---------- Band ---------- */
+#content .sub-title,
+#content .title-desc {
+  text-align: center;
+}
+
+#content .sub-title {
+  text-transform: uppercase;
+}
+
+#content .container {
+  padding: 64px 16px;
+}
+
+#content .sub-title {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+
+  margin: 10px 0;
+}
+
+#content .title-desc {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  opacity: 0.6;
+
+  margin: 15px 0;
+}
+
+#content .the-band .desc {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+#content .the-band .list-item {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 32px 0;
+}
+
+#content .the-band .item {
+  text-align: center;
+}
+
+#content .the-band .item .name {
+  text-align: center;
+  font-size: 1.5rem;
+
+  margin: 15px 0;
+}
+
+#content .the-band .item img {
+  width: 60%;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---------- Tour dates ---------- */
+
+#content .tour-dates {
+  background-color: #000;
+}
+
+#content .tour-dates .sub-title,
+#content .tour-dates .title-desc {
+  color: #fff;
+}
+
+#content .tour-dates .month {
+    color: #757575;
+
+    padding: 8px 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    overflow: auto;
+}
+
+#content .tour-dates .month .status {
+    display: inline-block;
+
+    color: #fff;
+
+    padding: 4px 8px;
+    margin-left: 16px;
+    background-color: #f44336;
+}
+
+#content .tour-dates .month:last-child .status {
+    width: 25px;
+    height: 22.5px;
+    background-color: #000;
+    margin-right: 0 16px auto ;
+    border-radius: 50%;
+
+    float: right;
+}
+
+#content .tour-dates .tour-place {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 8px;
+}
+
+#content .tour-dates .place {
+  width: 32.7%;
+  background-color: #fff;
+}
+
+#content .tour-dates .place .place-desc {
+  padding: 0 16px;
+}
+
+#content .tour-dates .place img {
+  width: 100%;
+}
+
+#content .tour-dates .place .place-sub-title {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+#content .tour-dates .place .time {
+  margin: 15px 0;
+  opacity: 0.6;
+}
+
+#content .tour-dates .place .desc {
+  margin: 15px 0;
+}
+
+#content .tour-dates .place .buy-ticket {
+  margin-bottom: 16px;
+}
+
+/* ============= Contact ============= */
+
+#content .contact .contact-about {
+  display: flex;
+}
+
+#content .contact .contact-about .contact-info {
+  width: 50%;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #000;
+
+}
+
+#content .contact .contact-about .contact-info i {
+  margin-right: 18px;
+}
+
+#content .contact .contact-about .contact-info a {
+  color: #000;
+}
+
+#content .contact .contact-about .contact-info .map a {
+  padding-left: 4px;
+}
+
+#content .contact .contact-about .contact-form {
+  width: 50%;
+}
+
+#content .contact .contact-about .contact-form input {
+  padding: 11px 8px;
+  border: 1px solid #ccc;
+}
+
+#content .contact .contact-about .contact-form .input {
+  width: 49%;
+}
+
+#content .contact .contact-about .contact-form .input-email {
+  margin-left: 3%;
+}
+
+#content .contact .contact-about .contact-form .input-mess {
+  margin-top: 10px;
+  width: 100%;
+}
+
+#content .contact .contact-about .contact-form .btn {
+  min-width: 72px;
+  padding: 11px 16px;
+  margin: 16px 0;
+  border: none;
+
+  float: right;
+}
+
+/* ============= Map ============= */
+
+#content .map .img-map {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* ============= Modal ============= */
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 64px 16px;
+  background-color: #F1F1F1;
+
+  font-size: 2.4rem;
+  color: #747373;
+  
+}
+
+#footer .icon:hover {
+  color: #ccc;
+}
+
+#footer .desc {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+#footer a {
+  color: #747373;
+  text-decoration: underline;
+}
+
+
+/* ============= Modal ============= */
+
+.modal .modal-input {
+  display: block;
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 2;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal .modal-contain {
+  width: 900px;
+  max-width: calc(100% - 64px);
+  background-color: #fff;
+  animation: modalFadein ease 0.5s;
+}
+
+/* ============= Header ============= */
+.modal .modal-contain .modal-header {
+  position: relative;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 4px;
+  line-height: 1.5;
+  color: #fff;
+  padding: 42px 16px;
+  background-color: #009688;
+}
+
+.modal .modal-header .modal-close {
+  position: absolute;
+  font-size: 1.8rem;
+  padding: 8px 16px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.modal .modal-header .modal-close:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.modal .modal-header .header-title {
+  margin: 10px 0;
+}
+
+/* ============= Body ============= */
+.modal .modal-body {
+  padding: 0.15px 16px;
+
+}
+
+.modal .modal-body .modal-label {
+  display: block;
+  margin: 15px 0;
+}
+
+.modal .modal-body .modal-pay {
+  font-size: 1.6rem;
+  color: #fff;
+
+  margin: 16px 0;
+  padding: 16px;
+  width: 100%;
+  background-color: #009688;
+  border: none;
+  cursor: pointer;
+}
+
+.modal .modal-body .modal-pay:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+/* ============= Footer ============= */
+.modal .modal-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.15px 16px;
+  margin: 16px 0;
+}
+
+.modal .modal-footer .modal-close {
+  color: #fff;
+  padding: 12px 16px;
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+.modal .modal-footer .modal-close:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.modal .modal-footer a {
+  text-decoration: underline;
+}
+
+/* ============= Js ============= */
+.openflex {
+  display: flex;
+}
+
+@keyframes modalFadein {
+  from {
+    transform: translateY(-140px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
