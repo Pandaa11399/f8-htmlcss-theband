@@ -102,7 +102,7 @@ a {
 #slider {
   position: relative;
   padding-top: 50%;
-  background: url(/assets/img/ny.jpg) top center / cover no-repeat;
+  background: #ccc url(/assets/img/ny.jpg) top center / cover no-repeat;
 }
 
 #slider .text-slider {
